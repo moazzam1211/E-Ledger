@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">E-L</string>
+    <string name="navigation_drawer_open">open navigation drawer</string>
+    <string name="navigation_drawer_close">close navigation drawer</string>
+    <string-array name="PurchaseType">
+        <item>Debit</item>
+        <item>Cash</item>
+
+
+    </string-array>
+    <string-array name="Year">
+
+        <item>2021</item>
+
+
+    </string-array>
+</resources>

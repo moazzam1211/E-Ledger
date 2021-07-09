@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowStocksOnHand">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:showDividers="middle"
+                android:divider="@color/colorPrimaryDark"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_5sdp"
+
+                    >
+
+
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:alignmentMode="alignMargins"
+                        android:background="#8AEC3333"
+                        android:columnCount="10"
+                        android:columnOrderPreserved="false"
+                        android:divider="@color/blue4"
+                        android:padding="@dimen/_5sdp"
+                        android:splitMotionEvents="true"
+                        android:showDividers="middle"
+                        >
+
+                        <TextView
+                            android:id="@+id/t1"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Month"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"/>
+
+
+                        <TextView
+                            android:id="@+id/t2"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Opening\nStock"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/t3"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Total\nPurchase"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/t4"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Total Sales"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/t5"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Stock On\nHand"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"/>
+
+
+                    </TableRow>
+
+
+                </androidx.cardview.widget.CardView>
+            </TableLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/expenseList"
+                tools:listitem="@layout/stock_on_hand_list"
+                tools:itemCount="3"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</HorizontalScrollView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Dashboard"
+            >
+            <menu>
+
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/dashboard"
+                        android:title="Dashboard"
+                        android:icon="@drawable/dashboardic"
+                        />
+                    <item
+                        android:id="@+id/inven"
+                        android:title="Inventory"
+                        android:icon="@drawable/inventoryic"
+                        />
+                    <item
+                        android:id="@+id/ledg"
+                        android:title="Ledger"
+                        android:icon="@drawable/ledgeric"/>
+                    <item
+                        android:id="@+id/pay"
+                        android:title="Payments"
+                        android:icon="@drawable/creditic"/>
+                    <item
+                        android:id="@+id/invo"
+                        android:title="Invoices"
+                        android:icon="@drawable/invoiceic"/>
+                    <item
+                        android:id="@+id/vend"
+                        android:title="Vendors"
+                        android:icon="@drawable/handshakeic"/>
+                    <item
+                        android:id="@+id/cust"
+                        android:title="Customers"
+                        android:icon="@drawable/customeric"/></group>
+
+
+            </menu>
+
+
+        </item>
+
+
+    </group>
+
+
+    <item
+        android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/editprofile"
+                    android:title="Edit Profile"
+                    android:icon="@drawable/profile"
+
+                    />
+                <item
+                    android:id="@+id/logout"
+                    android:title="Logout"
+                    android:icon="@drawable/logout"/>
+            </group>
+
+        </menu>
+    </item>
+<group android:checkableBehavior="single">
+        <item android:title="About"
+            android:id="@+id/about"
+            android:icon="@drawable/aboutic"/>
+</group>
+
+</menu>

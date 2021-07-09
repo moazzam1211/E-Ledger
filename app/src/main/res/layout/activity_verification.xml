@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Verification"
+    android:fillViewport="true"
+    android:background="@drawable/elui"
+    android:padding="@dimen/_5sdp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_15sdp"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_20sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:id="@+id/receiveAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_140sdp"
+                    app:lottie_rawRes="@raw/send"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="OTP Verification \nfor Sign-Up to E-LEDGER"
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="bold"
+                    android:padding="@dimen/_1sdp"
+                    android:textColor="@color/colorTxt"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Enter the OTP sent to"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/colorTxt"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtMobile"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:gravity="center"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"/>
+               
+                <com.chaos.view.PinView
+                    android:id="@+id/pinView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:itemCount="6"
+                    app:itemWidth="@dimen/_35sdp"
+                    app:itemHeight="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    app:lineColor="@color/blue2"
+                    android:background="#FFFFFF"
+                    style="@style/PinWidget.PinView"
+                    android:inputType="number"
+                    android:cursorVisible="true"
+                    app:cursorColor="@color/colorTxt"
+                    app:hideLineWhenFilled="true"
+                    app:itemRadius="@dimen/_5sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/blue2"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="didn't receive the otp |"
+                        android:textColor="@color/colorTextSecondary"
+                        android:textSize="@dimen/_12sdp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtResendOTP"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Resend OTP"
+                        android:textColor="@color/blue2"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="or"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change Mobile Number |"
+                        android:textColor="@color/colorTextSecondary"
+                        android:textSize="@dimen/_12sdp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/changeNum"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Change Number"
+                        android:textColor="@color/blue2"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                    <Button
+                        android:onClick="nextScreenAfterVerify"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/verifybtn"
+                        android:background="@drawable/btn_bg"
+                        android:text="Verify"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginVertical="@dimen/_20sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:paddingHorizontal="@dimen/_40sdp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</ScrollView>

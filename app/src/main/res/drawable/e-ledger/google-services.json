@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "601544966020",
+    "project_id": "e-ledger-fyp",
+    "storage_bucket": "e-ledger-fyp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601544966020:android:d37a6462407088521ba7d1",
+        "android_client_info": {
+          "package_name": "com.example.biyasbdcountdown"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601544966020-hptjvtssvs7a5f37abqi2bilgsbc4dt7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkMI2YF7NjoGUqd9DfOOKbOK2ROjBrxzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601544966020-hptjvtssvs7a5f37abqi2bilgsbc4dt7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601544966020:android:581400a81fdf95201ba7d1",
+        "android_client_info": {
+          "package_name": "com.example.otpverification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601544966020-pv7ih9rqp8vsb1k38sq8q65bmg1t80id.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.otpverification",
+            "certificate_hash": "784df9a889de8b50f3ad94b73392fdef4054f323"
+          }
+        },
+        {
+          "client_id": "601544966020-hptjvtssvs7a5f37abqi2bilgsbc4dt7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkMI2YF7NjoGUqd9DfOOKbOK2ROjBrxzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601544966020-hptjvtssvs7a5f37abqi2bilgsbc4dt7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCustomers"
+    android:fillViewport="true"
+    android:background="@color/bgcolor"
+    android:padding="@dimen/_5sdp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Customer"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add new Customer Details"
+                        android:textSize="12sp"
+                        android:layout_gravity="center"
+                        />
+                    <EditText
+                        android:drawableStart="@drawable/profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Customer Name"
+                        android:inputType="text"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/customerName"
+                        android:layout_margin="@dimen/_5sdp"/>
+                    <EditText
+                        android:drawableStart="@drawable/company"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Customer Company Name"
+                        android:inputType="text"
+                        android:textSize="@dimen/_12sdp"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:id="@+id/customerCompany"
+                        android:layout_margin="@dimen/_5sdp"/>
+                    <EditText
+                        android:drawableStart="@drawable/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Customer Address"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:inputType="textPostalAddress"
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/customerAddress"
+                        android:layout_margin="@dimen/_5sdp"/>
+                    <EditText
+                        android:drawableStart="@drawable/telephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Customer Phone No."
+                        android:inputType="phone"
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/customerPhone"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:layout_margin="@dimen/_5sdp"/>
+                    <EditText
+                        android:drawableStart="@drawable/gmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Customer Email"
+                        android:inputType="textEmailAddress"
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/customerEmail"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:layout_margin="@dimen/_5sdp"/>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cadd"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="end|bottom"
+                android:backgroundTint="@color/blue2"
+                android:layout_margin="@dimen/_16sdp"
+                android:background="#00FAFAFA"
+                app:rippleColor="#ffff"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
